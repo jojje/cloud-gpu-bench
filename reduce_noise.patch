@@ -1,0 +1,26 @@
+diff --git a/ptflops/pytorch_engine.py b/ptflops/pytorch_engine.py
+index fe4ddb1..da8acaa 100644
+--- a/ptflops/pytorch_engine.py
++++ b/ptflops/pytorch_engine.py
+@@ -232,8 +232,6 @@ def batch_counter_hook(module, input, output):
+         batch_size = len(input)
+     else:
+         pass
+-        print('Warning! No positional inputs found for a module,'
+-              ' assuming batch size is 1.')
+     module.__batch_counter__ += batch_size
+ 
+ 
+diff --git a/pytorch_benchmark/benchmark.py b/pytorch_benchmark/benchmark.py
+index 01210e7..269fb30 100644
+--- a/pytorch_benchmark/benchmark.py
++++ b/pytorch_benchmark/benchmark.py
+@@ -274,7 +274,7 @@ def measure_energy(
+         pass
+ 
+     if not _is_valid(inference_joules):
+-        logger.error(
++        logger.debug(
+             "Unable to measure energy consumption. Device must be a NVIDIA Jetson."
+         )
+ 
