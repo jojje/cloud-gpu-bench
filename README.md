@@ -96,7 +96,7 @@ valuable after all, when people use _the same configuration_.
 
 
 [1]: https://pypi.org/project/pytorch-benchmark/
-[2]: https://github.com/jojje/cloud-cpu-bench
-[3]: https://github.com/jojje/cloud-cpu-bench/.github/workflows/image-pipeline.yaml
-[4]: https://hub.docker.com/repository/docker/jojje/cloud-gpu-bench
+[2]: https://github.com/jojje/cloud-gpu-bench
+[3]: https://github.com/jojje/cloud-gpu-bench/blob/master/.github/workflows/image-pipeline.yaml
+[4]: https://hub.docker.com/r/jojje/cloud-gpu-bench/
 [5]: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
