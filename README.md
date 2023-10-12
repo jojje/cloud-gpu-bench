@@ -81,7 +81,8 @@ my local one?
     ==[ Machine spec ]========
     GPU             : NVIDIA GeForce RTX 3090 (VRAM: 24576.0 MB)
     GPU #           : 1
-    CPU             : AMD Ryzen 9 5950X 16-Core Processor, Cores: 16 physical (32 virtual)
+    CPU             : AMD Ryzen 9 5950X 16-Core Processor
+    Cores           : 16 physical (32 virtual)
     RAM             : 125.51 GB total, 107.99 GB free
     Kernel          : 5.15.0-86-generic
 
