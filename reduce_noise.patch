@@ -12,15 +12,17 @@ index fe4ddb1..da8acaa 100644
  
  
 diff --git a/pytorch_benchmark/benchmark.py b/pytorch_benchmark/benchmark.py
-index 01210e7..269fb30 100644
+index 269fb30..5e28ff7 100644
 --- a/pytorch_benchmark/benchmark.py
 +++ b/pytorch_benchmark/benchmark.py
-@@ -274,7 +274,7 @@ def measure_energy(
+@@ -273,11 +273,6 @@ def measure_energy(
+     except Exception:
          pass
- 
-     if not _is_valid(inference_joules):
+
+-    if not _is_valid(inference_joules):
 -        logger.error(
-+        logger.debug(
-             "Unable to measure energy consumption. Device must be a NVIDIA Jetson."
-         )
- 
+-            "Unable to measure energy consumption. Device must be a NVIDIA Jetson."
+-        )
+-
+     return inference_joules
+
